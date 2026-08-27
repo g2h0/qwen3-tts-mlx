@@ -3,8 +3,8 @@
 # >=0.4.8. 0.4.8 also removes hot-path cache clears (~13% faster streaming).
 mlx-audio>=0.4.8,<0.5
 # Core mlx: 0.31.2 segfaults the batched generation path; 0.32.0 verified fixed
-# (2026-07-11). Re-verify batch_generate before raising the ceiling — it's the
-# canary for mlx regressions.
+# (2026-07-11), 0.32.2 verified (2026-08-27). Re-verify batch_generate before
+# raising the ceiling — it's the canary for mlx regressions.
 mlx>=0.31,!=0.31.2,<0.33
 gradio>=5.0,<7
 soundfile>=0.13
